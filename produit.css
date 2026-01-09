@@ -1,0 +1,124 @@
+* {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .produit {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .image-produit {
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+        }
+        
+        .info-produit {
+            padding: 30px;
+        }
+        
+        .nom-produit {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .prix {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .prix-actuel {
+            font-size: 36px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        .prix-ancien {
+            font-size: 24px;
+            color: #999;
+            text-decoration: line-through;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .bouton-acheter {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+        
+        .bouton-panier {
+            background-color: transparent;
+            color: #007bff;
+            border: 2px solid #007bff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .bouton-acheter:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+        
+        .bouton-panier:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (min-width: 768px) {
+            .produit {
+                flex-direction: row;
+            }
+            
+            .image-produit {
+                flex: 1;
+                height: 500px;
+            }
+            
+            .info-produit {
+                flex: 1;
+            }
+        }
