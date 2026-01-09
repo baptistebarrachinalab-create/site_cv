@@ -1,0 +1,61 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.content {
+    max-width: 21cm;
+    padding: 40px !important;
+}
+
+header {
+    border-bottom-color: #c0392b !important;
+    border-bottom-width: 4px !important;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.2em;
+}
+
+.subtitle {
+    color: #c0392b;
+    font-size: 1.1em;
+}
+
+.contact-info li {
+    background: #ecf0f1;
+    font-size: 0.9em;
+}
+
+.photo-profil img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-color: #2c3e50 !important;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    border-bottom-color: #ddd !important;
+}
+
+h2 {
+    border-bottom-color: #c0392b !important;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+td:first-child {
+    color: #c0392b;
+    width: 15%;
+}
+
+.skill-list li {
+    border-left-color: #2c3e50 !important;
+}
+
